@@ -1,0 +1,11 @@
+{
+  "domain": "bmw_cardata",
+  "name": "BMW CarData",
+  "codeowners": ["@stxffd"],
+  "config_flow": true,
+  "dependencies": ["application_credentials"],
+  "documentation": "https://www.home-assistant.io/integrations/bmw_cardata",
+  "iot_class": "cloud_polling",
+  "quality_scale": "bronze",
+  "requirements": []
+}

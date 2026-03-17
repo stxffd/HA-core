@@ -1,0 +1,74 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "This BMW CarData account is already configured.",
+      "reauth_successful": "Re-authentication was successful."
+    },
+    "error": {
+      "auth_failed": "Authentication failed. Please verify your Client ID and BMW CarData portal subscription.",
+      "auth_timeout": "Authorization timed out. Please try again and make sure to authorize the device on the BMW website within the time limit.",
+      "cannot_connect": "Unable to connect to BMW CarData servers. Please check your internet connection.",
+      "invalid_client_id": "Invalid Client ID format. Please check your Client ID from the BMW CarData portal.",
+      "unknown": "An unexpected error occurred. Please try again."
+    },
+    "step": {
+      "authorize": {
+        "description": "Open the following URL in your browser and enter the code to authorize this device:\n\n**URL:** {verification_uri}\n**Code:** {user_code}\n\nAfter you have authorized the device on the BMW website, click **Submit**.\n\n⚠️ Do NOT click Submit until the BMW page confirms the device has been authenticated.",
+        "title": "Authorize Device"
+      },
+      "reauth_confirm": {
+        "description": "The BMW CarData integration needs to re-authenticate. Click Submit to start the device authorization flow again.",
+        "title": "Reauthenticate BMW CarData"
+      },
+      "user": {
+        "data": {
+          "client_id": "Client ID"
+        },
+        "description": "Enter the Client ID you created in the BMW CarData portal.\n\nYou can find your Client ID in the CarData section of the BMW portal.\n\n**Important:** Make sure you have subscribed to both 'CarData API' and 'CarData Stream' before proceeding.",
+        "title": "BMW CarData Setup"
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "door_driver": { "name": "Driver door" },
+      "door_passenger": { "name": "Passenger door" },
+      "door_rear_driver": { "name": "Rear driver door" },
+      "door_rear_passenger": { "name": "Rear passenger door" },
+      "hood": { "name": "Hood" },
+      "is_moving": { "name": "Moving" },
+      "lock_driver": { "name": "Driver door lock" },
+      "lock_passenger": { "name": "Passenger door lock" },
+      "lock_rear_driver": { "name": "Rear driver door lock" },
+      "lock_rear_passenger": { "name": "Rear passenger door lock" },
+      "parking_brake": { "name": "Parking brake" },
+      "trunk": { "name": "Trunk" },
+      "window_driver": { "name": "Driver window" },
+      "window_passenger": { "name": "Passenger window" },
+      "window_rear_driver": { "name": "Rear driver window" },
+      "window_rear_passenger": { "name": "Rear passenger window" }
+    },
+    "device_tracker": {
+      "location": { "name": "Location" }
+    },
+    "sensor": {
+      "ambient_temperature": { "name": "Ambient temperature" },
+      "battery_management": { "name": "Battery SOC (management)" },
+      "battery_max_energy": { "name": "Battery max energy" },
+      "battery_range": { "name": "Electric range" },
+      "battery_soc": { "name": "Battery charge" },
+      "charging_power": { "name": "Charging power" },
+      "charging_status": { "name": "Charging status" },
+      "charging_target": { "name": "Charging target" },
+      "electric_charging_status": { "name": "Electric charging status" },
+      "fuel_consumption": { "name": "Fuel consumption" },
+      "fuel_level": { "name": "Fuel level" },
+      "fuel_range": { "name": "Fuel range" },
+      "mileage": { "name": "Mileage" },
+      "tyre_pressure_fl": { "name": "Tyre pressure front left" },
+      "tyre_pressure_fr": { "name": "Tyre pressure front right" },
+      "tyre_pressure_rl": { "name": "Tyre pressure rear left" },
+      "tyre_pressure_rr": { "name": "Tyre pressure rear right" }
+    }
+  }
+}
